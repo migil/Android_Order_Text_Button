@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F2EF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:text="QUANTITY"
+        android:textSize="24sp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F3F2EF"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_decrement"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:onClick="decrementQuantity"
+            android:text="-"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/quantity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+            android:text="0"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/button_increment"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:onClick="incrementQuantity"
+            android:text="+"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/order_Summary_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:padding="6dp"
+        android:text="PRICE"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/text_priceValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="0dp"
+        android:padding="6dp"
+        android:text="$0.00"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:onClick="submitOrder"
+        android:text="Order"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
+
